@@ -10,7 +10,7 @@ int main()
 	string operation;
 	double num = 0;
 	double num2 = 0;
-	cout << "Please enter an operation +, -, *, /, plus, minus, mul, div followed by two values";
+	cout << "Please enter an operation +, -, *, /, plus, minus, mul, div followed by two values ";
 	
 	while(cin >> operation >> num >> num2) {			
 		double result = 0;
@@ -31,7 +31,7 @@ int main()
 			if (num2==0) error("cant divide by zero");
 			result = num/num2;
 		}
-		cout << num << operation << num2 << " == " << result <<'\n';
+		cout << num << operation << num2 << " = " << result <<'\n';
 		cout << "Please enter a new opperation ";
 	}
 }
